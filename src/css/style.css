@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Cera-regular;
+    src: url(../fonts/CeraPro-Regular.ttf);
+    font-style: normal;
+}
+
+*{margin:0;padding:0; box-sizing: border-box; font-family: Cera-regular;}
+html {
+    width: 100%; height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.page {min-width: 1600px; min-height: 900px; width: 100%; height: 100%; background-color: #006aa9; display: flex;}
+/* Background for main */
+.main {
+    width: 80%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-1 {
+    background-image: url(../images/main-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.main-2 {
+    background-image: url(../images/main-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.main-3 {
+    background-image: url(../images/main-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Product-name {
+    margin-top: 65px;
+    width: 555px;
+    height: 150px;
+    background-color: #006aa9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cera-regular;
+    color: white;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+.Product-version {
+    color: white;
+    font-family: Cera-regular;
+    font-size: 24px;
+    margin-left: 45px;
+    margin-bottom: 50px;
+}
+
+.Login-side-bar {
+    height: 100%;
+    width: 20%;
+}
+
+
+
+.users-list {
+    width: 100%;
+    height: calc(50% - 60px);
+    color: white;
+    padding: 0 6.7%;
+}
+
+.users-list ul {
+    word-spacing: 15px;
+    list-style-type: none;
+}
+
+.logo {
+    width: 100%;
+    height: 120px;
+    background-image: url(../svg/Logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-size: 70%;
+}
+
+.login-container {
+    width: 100%;
+    height: calc(50% - 60px);
+}
+
+.Login-bar {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 6.7%;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+
+input {
+    padding: 15px 15px;
+    margin: 8px 0px;
+    background-color: #006aa9;
+    border: solid 1px white;
+    color: white;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+input.name-input {
+    background-image: url(../svg/user.svg);
+    background-repeat: no-repeat;
+    background-position: right 5% center;
+    padding-right: 25px;
+}
+
+
+input.password-input {
+    background-image: url(../svg/square-unlock.svg);
+    background-repeat: no-repeat;
+    background-position: right 5% center;
+    padding-right: 25px;
+    letter-spacing: 10px
+}
+
+::placeholder {
+    color: white;
+    letter-spacing:normal
+}
+
+h1 {
+    font-size: 25px;
+    padding: 22% 0px 12%;
+}
+
+h2 {
+    font-weight: 400;
+    padding: 12% 0 10%;
+}
+
+.login-alert {
+    margin: 8px 0;
+}
+
+.test-button {
+    width: 50px;
+    height: 50px;
+}
