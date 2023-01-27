@@ -137,7 +137,7 @@ input.password-input {
     background-repeat: no-repeat;
     background-position: right 5% center;
     padding-right: 25px;
-    letter-spacing: 10px
+    letter-spacing: 10px;
 }
 
 ::placeholder {
@@ -162,4 +162,8 @@ h2 {
 .test-button {
     width: 50px;
     height: 50px;
+}
+
+.hide-login-error {
+    visibility: hidden;
 }

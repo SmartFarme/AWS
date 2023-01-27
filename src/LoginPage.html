@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/RandomBackground.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -22,18 +23,16 @@
                 <form action="#" class="Login-bar">
                     <h1>Войдите в программу</h1>
                     <input class="name-input" type="name" placeholder="Введите имя пользователя" value="Администратор"/>
-                    <input class="password-input" type="password" placeholder="Введите пароль" />
-                    <div class="login-alert">
+                    <input class="password-input" autofocus type="password" placeholder="Введите пароль" />
+                    <div class="login-alert hide-login-error">
                         <p>Вход в программу не выполнен</p>
                         <p>Введенные Логин и Пароль неверные!</p>
-                        <button class="test-button"></button>
                     </div>
                 </form>
             </div>
             <div class="users-list">
                 <h2>Последние входы:</h2>
-                <ul>
-                    <li>18.01.2023   13:58   Администратор</li>
+                <ul id="login-list">
                 </ul>
             </div>
             <div class="logo"></div>
@@ -43,3 +42,4 @@
 </body>
 
 </html>
+
