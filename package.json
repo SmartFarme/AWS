@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Mechapa/AWS_Web#readme",
   "dependencies": {
-    "axios": "^1.2.5"
+    "axios": "^1.2.5",
+    "ng2-dragula": "^3.2.0"
   }
 }

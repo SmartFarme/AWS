@@ -4,6 +4,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: Cera-medium;
+    src: url(../fonts/CeraPro-Medium.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Cera-bold;
+    src: url(../fonts/CeraPro-Bold.ttf);
+    font-style: normal;
+}
+
 *{margin:0;padding:0; box-sizing: border-box; font-family: Cera-regular;}
 html {
     width: 100%; height: 100%;
@@ -13,9 +25,9 @@ body {
     height: 100%;
 }
 
-.page {min-width: 1600px; min-height: 900px; width: 100%; height: 100%; background-color: #006aa9; display: flex;}
+.login-page {min-width: 1600px; min-height: 900px; width: 100%; height: 100%; background-color: #006aa9; display: flex;}
 /* Background for main */
-.main {
+.login-main {
     width: 80%;
     margin: 0;
     display: flex;
