@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: 35px;
+    height: 50px;
     background-color: #006aa9;
     position: fixed;
     top: 0;
@@ -11,20 +11,22 @@
 .main-nav-bar {
     display: flex;
     align-items: center;
-    height: 35px;
+    height: 50px;
     width: 50%;
+    margin-left: calc(50% - 200px);
 }
 
 .main-nav-item {
     color: white;
-    font-size: 14px;
+    font-size: 20px;
     font-family: Cera-regular;
     margin-left: 40px;
     height: 20px;
+    margin-bottom: 5px;
 }
 
 #monitor {
-    font-family: Cera-medium;
+    font-family: Cera-bold;
 }
 
 
@@ -32,14 +34,14 @@
     content: "";
     margin-top: 3px;
     padding: 0px;
-    height: 1px;
+    height: 2px;
     display: block;
     background-color: white;
 }
 
 .side-header-bar {
-    height: 35px;
-    width: 50%;
+    height: 50px;
+    width: 200px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -78,7 +80,7 @@
 }
 
 .page {
-    padding: 40px 10px 10px 10px;
+    padding: 55px 10px 10px 10px;
     height: 100%;
     width: 100%;
     z-index: 100;
@@ -91,14 +93,61 @@
 }
 
 .widget-table-header {
-    height: 50px;
+    height: 20%;
+    padding: 5px 0 5px 0;
     width: 100%;
     background-color: #006aa9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 
-.widget-tiles-item {
-    background-color: chartreuse;
+
+
+.tile-state {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+#tiles-1-1 .tile-state {
+    background-color: #0B9DDD;
+}
+
+#tiles-1-3 .tile-state {
+    background-color: #ED1C24;
+}
+
+#tiles-1-2 .tile-state {
+    background-color: #25BE2C;
+}
+
+.widget-tiles-title,
+.widget-tiles-changes {
+    color: white;
+    font-size: 20px;
+    font-family: Cera-regular;
+}
+
+.widget-tiles-value {
+    color: white;
+    font-size: 32px;
+    font-family: Cera-regular;
+}
+
+.widget-tiles-title {
+    width: 100%;
+    height: 45%;
+}
+
+.widget-tiles-changes,
+.widget-tiles-value {
+    width: 100%;
+    height: 25%;
 }
 
 .widget-journal {
@@ -106,9 +155,13 @@
 }
 
 .widget-journal-header {
-    height: 50px;
+    height: 60px;
+    padding: 5px;
     width: 100%;
     background-color: #006aa9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .gridster {
@@ -132,6 +185,185 @@ li {
     cursor: pointer;
 }
 
-ul {
+.gridster-ul {
     margin: 0;
+}
+
+#colorWell {
+    width: 40px;
+    height: 25px;
+    border: 0;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+
+#robot-1 {
+    background-image: url(../svg/tab-milk-yield-statistics-white.svg);
+}
+
+#robot-2 {
+    background-image: url(../svg/wash.svg);
+}
+
+
+
+.widget-table-icon,
+.widget-journal-icon {
+    width: 50px;
+    background-color: white;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.widget-journal-icon {
+    margin-left: 0px;
+    margin-right: 10px;
+    background-image: url(../svg/Group\ 7.svg);
+    background-size: cover;
+}
+
+.widget-journal-title {
+    width: 505px;
+    color: white;
+    font-size: 24px;
+    font-family: Cera-regular;
+}
+
+.widget-table-title {
+    width: 160px;
+    height: fit-content;
+    display: flex;
+    font-size: 24px;
+    font-family: Cera-regular;
+    align-items: center;
+}
+
+.robot-name {
+    width: fit-content;
+    height: 100%;
+    color: white;
+}
+
+.robot-number {
+    width: fit-content;
+    height: 100%;
+    margin-left: 10px;
+    color: white;
+}
+
+.widget-table-search,
+.widget-journal-search {
+    width: 30px;
+    margin-right: 10px;
+    height: 30px;
+    background-image: url(../svg/more-info.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.widget-table-body {
+    height: 80%;
+    width: 100%;
+}
+
+
+.widget-tb-item-list {
+    width: 100%;
+    height: 100%;
+
+}
+
+.widget-journal-item-list {
+    width: 100%;
+    height: 100%;
+}
+
+.widget-journal-item {
+    width: 100%;
+    height: 48px;
+    padding: 4px 0;
+    display: flex;
+}
+
+.widget-table-item {
+    width: 100%;
+    height: 25%;
+    padding: 10px 0;
+    display: flex;
+}
+
+
+
+.widget-table-item-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 35px;
+    margin-right: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.widget-journal-item-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../svg/information-circle.svg);
+}
+
+.widget-table-item-title {
+    width: 200px;
+    height: 100%;
+}
+
+.widget-table-item-icon.time {
+    background-image: url(../svg/time.svg);
+}
+
+.widget-table-item-icon.cow-number {
+    background-image: url(../svg/cow-id.svg);
+}
+
+.widget-table-item-icon.milk-value {
+    background-image: url(../svg/milk-value.svg);
+}
+
+.widget-table-item-icon.drain {
+    background-image: url(../svg/drain.svg);
+}
+
+.widget-table-item-title {
+    font-size: 20px;
+    font-family: Cera-regular;
+    height: 40px;
+    padding-top: 7px;
+}
+
+.widget-journal-item-title {
+    font-size: 20px;
+    font-family: Cera-regular;
+    height: 40px;
+    padding-top: 7px;
+    width: 505px;
+}
+
+.widget-journal-time {
+    font-size: 16px;
+    font-family: Cera-regular;
+    color: grey;
+    padding-top: 10px;
+}
+
+.widget-logo {
+    background-image: url(../images/PromTech.png);
+    width: 200px;
+    height: 100px;
+    z-index: 200;
+    position: absolute;
+    background-size: cover;
 }

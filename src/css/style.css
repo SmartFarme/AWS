@@ -16,16 +16,31 @@
     font-style: normal;
 }
 
-*{margin:0;padding:0; box-sizing: border-box; font-family: Cera-regular;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cera-regular;
+}
+
 html {
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 body {
     height: 100%;
 }
 
-.login-page {min-width: 1600px; min-height: 900px; width: 100%; height: 100%; background-color: #006aa9; display: flex;}
+.login-page {
+    min-width: 1600px;
+    min-height: 900px;
+    width: 100%;
+    height: 100%;
+    background-color: #006aa9;
+    display: flex;
+}
+
 /* Background for main */
 .login-main {
     width: 80%;
@@ -126,7 +141,8 @@ body {
     color: white;
 }
 
-input {
+input.name-input,
+input.password-input {
     padding: 15px 15px;
     margin: 8px 0px;
     background-color: #006aa9;
@@ -154,7 +170,7 @@ input.password-input {
 
 ::placeholder {
     color: white;
-    letter-spacing:normal
+    letter-spacing: normal
 }
 
 h1 {
@@ -179,3 +195,76 @@ h2 {
 .hide-login-error {
     visibility: hidden;
 }
+
+.ready .gs-w:not(.preview-holder) {
+    transition: opacity .3s, left .3s, top .3s
+}
+
+
+
+
+.ready .gs-w:not(.preview-holder),
+.ready .resize-preview-holder {
+    transition: opacity .3s, left .3s, top .3s, width .3s, height .3s
+}
+
+.gridster .preview-holder {
+    z-index: 1;
+    position: absolute;
+    background-color: #006aa9;
+    border-color: #006aa9;
+    opacity: .5
+}
+
+.gridster .player-revert {
+    z-index: 10 !important;
+    transition: left .3s, top .3s !important
+}
+
+.gridster .dragging,.gridster .resizing{
+              z-index:10!important;                 
+              transition:all 0s!important;
+         
+         }
+           .gs-resize-handle{position:absolute;z-index:1}
+         
+         .gs-resize-handle-both{
+             width:20px;
+             height:20px;
+             bottom:-8px;
+             right:-8px;
+            }
+         
+         .gs-resize-handle-x{
+          top:0;
+          bottom:13px;
+          right:-5px;
+          width:10px;
+          cursor:e-resize}
+         
+         .gs-resize-handle-y{
+             left:0;
+             right:13px;
+             bottom:-5px;
+             height:10px;
+             cursor:s-resize}
+         
+         .gs-w:hover .gs-resize-handle,
+         .resizing 
+         .gs-resize-handle{opacity:1}
+         .gs-resize-handle,
+         .gs-w.dragging 
+         .gs-resize-handle
+         {opacity:0}
+         
+         
+         
+         .gs-resize-disabled 
+         .gs-resize-handle{display:none!important}
+         [data-max-sizex="1"] 
+         
+         .gs-resize-handle-x,[data-max-sizey="1"] 
+         
+         .gs-resize-handle-y,[data-max-sizey="1"][data-max-sizex="1"] 
+         
+         .gs-resize-handle{display:none!important}
