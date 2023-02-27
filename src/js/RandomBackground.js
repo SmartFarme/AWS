@@ -5,7 +5,7 @@ function randomBackground (min, max) {
     return random
 }
 
-let randomMain = randomBackground(1,3);
+let randomMain = randomBackground(1,4);
 
 $(function() {
     $('.login-main').addClass("main-" + randomMain);

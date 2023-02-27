@@ -6,6 +6,7 @@
     top: 0;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 
 .main-nav-bar {
@@ -32,7 +33,7 @@
 
 #monitor:after {
     content: "";
-    margin-top: 3px;
+    margin-top: 5px;
     padding: 0px;
     height: 2px;
     display: block;
@@ -360,10 +361,65 @@ li {
 }
 
 .widget-logo {
-    background-image: url(../images/PromTech.png);
+    background-image: url(../svg/logo-blue.svg);
     width: 200px;
-    height: 100px;
+    height: 75px;
     z-index: 200;
     position: absolute;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 35px;
 }
+
+.burger-nav {
+    position: fixed;
+
+    width: 320px;
+    height: 150px;
+    background: #006aa9;
+    padding: 15px 0;
+    top: 50px;
+    right: -320px;
+
+    transition: all 0.5s ease-out;
+    z-index: 2;
+}
+
+.show {
+    right: 0px;
+  }
+
+.logout, .settings {
+    display: flex;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+  .logoutIcon {
+    background-image: url(../svg/Icon-white.svg);
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .burgerSettingsIcon {
+    background-image: url(../svg/user.svg);
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .logoutTitle {
+    font-size: 20px;
+    font-family: Cera-regular;
+    color: white;
+    margin-left: 20px;
+  }

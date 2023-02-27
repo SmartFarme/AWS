@@ -73,6 +73,13 @@ body {
     background-position: center center;
 }
 
+.main-4 {
+    background-image: url(../images/main-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 .Product-name {
     margin-top: 65px;
     width: 555px;
@@ -81,16 +88,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Cera-regular;
-    color: white;
-    font-size: 55px;
-    font-weight: 800;
+    background-image: url(../svg/logo-white.svg);
+    background-position: bottom 35px right 50%;
+    background-size: 400px 100px;
+    background-repeat: no-repeat;
 }
 
 .Product-version {
     color: white;
     font-family: Cera-regular;
-    font-size: 24px;
+    font-size: 16px;
     margin-left: 45px;
     margin-bottom: 50px;
 }
@@ -110,8 +117,24 @@ body {
 }
 
 .users-list ul {
-    word-spacing: 15px;
     list-style-type: none;
+}
+
+.users-list li {
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-name {
+    font-family: Cera-regular;
+}
+
+.login-time {
+    font-family: Cera-regular;
+    width: 130px;
+    font-size: 14px;
+    padding: 2px;
 }
 
 .logo {
@@ -144,7 +167,6 @@ body {
 input.name-input,
 input.password-input {
     padding: 15px 15px;
-    margin: 8px 0px;
     background-color: #006aa9;
     border: solid 1px white;
     color: white;
@@ -153,6 +175,7 @@ input.password-input {
 }
 
 input.name-input {
+    margin: 8px 0px;
     background-image: url(../svg/user.svg);
     background-repeat: no-repeat;
     background-position: right 5% center;
@@ -161,6 +184,7 @@ input.name-input {
 
 
 input.password-input {
+    margin: 8px 0px 0px;
     background-image: url(../svg/square-unlock.svg);
     background-repeat: no-repeat;
     background-position: right 5% center;
@@ -175,7 +199,7 @@ input.password-input {
 
 h1 {
     font-size: 25px;
-    padding: 22% 0px 12%;
+    padding: 22% 0px 22%;
 }
 
 h2 {
@@ -184,7 +208,7 @@ h2 {
 }
 
 .login-alert {
-    margin: 8px 0;
+    margin: 16px 0 8px;
 }
 
 .test-button {
@@ -268,3 +292,5 @@ h2 {
          .gs-resize-handle-y,[data-max-sizey="1"][data-max-sizex="1"] 
          
          .gs-resize-handle{display:none!important}
+
+        

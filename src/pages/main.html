@@ -8,6 +8,8 @@
     <title>Main pages</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/main.css">
+    <script src="/node_modules/axios/dist/axios.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -23,6 +25,16 @@
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
+            </div>
+            <div class="burger-nav">
+                <div class="logout" id="logout">
+                    <div class="logoutIcon"></div>
+                    <div class="logoutTitle">Выход</div>
+                </div>
+                <div class="settings" id="burger-settings">
+                    <div class="burgerSettingsIcon"></div>
+                    <div class="logoutTitle">Параметры</div>
+                </div>
             </div>
         </div>
     </header>
@@ -143,29 +155,13 @@
         </div>
         <div class="widget-logo"></div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
             console.log("Библиотека работает!")
         });
     </script>
     <script src='../js/jquery.gridster.min.js'></script>
-    <script>
-        $(function () { //DOM Ready
-
-            $(".gridster ul").gridster({
-                widget_margins: [5, 5],
-                widget_base_dimensions: [146, 146],
-                min_cols: 7,
-                resize: {
-                    enabled: true,
-                    max_size: [4, 2],
-                    min_size: [1, 1]
-                }
-            });
-
-        });
-    </script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
