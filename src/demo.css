@@ -1,0 +1,99 @@
+/* required file for gridstack to work */
+@import "../node_modules/gridstack/dist/gridstack.min.css";
+
+/* Optional styles for demos */
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+.grid-stack-item-content {
+
+  text-align: left;
+}
+
+.grid-stack-item-removing {
+  opacity: 0.5;
+}
+
+.sidebar .widget-content {
+  display: none;
+}
+
+.grid-stack-instance-1 .widget-move {
+  display: none;
+}
+
+.sidebar .widget-move {
+  display: none;
+}
+
+.widget-move {
+  width: 125px;
+  height: 125px;
+  border: 2px dashed blue;
+}
+
+.trash {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 18px;
+  left: 1780px;
+  background:  center center url(svg/trash.svg) no-repeat;
+  background-size: 50px;
+}
+
+.widget-content {
+  display: none;
+}
+
+.grid-stack-instance-1 .widget-content {
+  display: block;
+}
+
+.sidebar .grid-stack-item {
+  width: 125px;
+  height: 125px;
+  border: 2px dashed blue;
+
+  line-height: 35px;
+  z-index: 10;
+  background: rgba(67, 122, 194, 0.1);
+  cursor: default;
+  display: inline-block;
+}
+
+.sidebar .grid-stack-item .bpx {
+    display: none;
+}
+.sidebar .grid-stack-item .grid-stack-item-content {
+  background: none;
+  height: 100%;
+}
+
+/* make nested grid have slightly darker bg take almost all space (need some to tell them apart) so items inside can have similar to external size+margin */
+.grid-stack > .grid-stack-item.grid-stack-sub-grid > .grid-stack-item-content {
+  background: rgba(0,0,0,0.1);
+  inset: 0 2px;
+}
+.grid-stack.grid-stack-nested {
+  background: none;
+  /* background-color: red; */
+  /* take entire space */
+  position: absolute;
+  inset: 0; /* TODO change top: if you have content in nested grid */
+}
+
+.grid-stack-tittle {
+  display: none;
+}
+
+.sidebar .grid-stack-item .grid-stack-item-content .grid-stack-tittle {
+  display: block;
+}

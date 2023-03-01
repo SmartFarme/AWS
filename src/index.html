@@ -13,35 +13,19 @@
     <script src="js/RandomBackground.js"></script>
     <script src="/node_modules/axios/dist/axios.js"></script>
     <script type="text/javascript">
-        $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#acInput" ).autocomplete({
-      source: availableTags
-    });
-  } );
+       $(function () {
+            var availableTags = [
+                "Администратор",
+                "Инжинер",
+                "Оператор",
+                "Оператор22",
+            ];
+            $("#acInput").autocomplete({
+                source: availableTags,
+                minLength: 2,
+                deferRequestBy: 300,
+            });
+        });
     </script>
 </head>
 

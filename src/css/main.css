@@ -87,10 +87,16 @@
     z-index: 100;
 }
 
+.bpx {
+    width: 100%;
+    height: 40px;
+    background-color: #006aa9;
+}
 
 
 .widget-table {
     border: #006aa9 1px solid;
+    height: 100%
 }
 
 .widget-table-header {
@@ -104,7 +110,10 @@
 }
 
 
-
+.widget-tiles-item {
+    height: 100%;
+    text-align: left;
+}
 
 .tile-state {
     padding: 10px;
@@ -112,7 +121,6 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-
 }
 
 #tiles-1-1 .tile-state {
@@ -153,10 +161,12 @@
 
 .widget-journal {
     border: #006aa9 1px solid;
+    height: 100%;
+    max-height: 300px;
 }
 
 .widget-journal-header {
-    height: 60px;
+    height: 58px;
     padding: 5px;
     width: 100%;
     background-color: #006aa9;
@@ -348,7 +358,7 @@ li {
 .widget-journal-item-title {
     font-size: 20px;
     font-family: Cera-regular;
-    height: 40px;
+    height: 39px;
     padding-top: 7px;
     width: 505px;
 }
@@ -365,11 +375,15 @@ li {
     width: 200px;
     height: 75px;
     z-index: 200;
-    position: absolute;
+    position: fixed;
     background-size: contain;
     background-repeat: no-repeat;
     bottom: 0;
     left: 35px;
+}
+
+.add-widget-bottom {
+
 }
 
 .burger-nav {
@@ -422,4 +436,66 @@ li {
     font-family: Cera-regular;
     color: white;
     margin-left: 20px;
+  }
+
+  .change .bar1 {
+    margin: 0px 10px 0px;
+    background: red;
+    transition: 0.5s;
+  }
+  
+  .change .bar2 {
+    transform: rotate(0deg) translate(0, 1px);
+    background: red;
+  }
+  
+  .bar1 {
+    width: 45px;
+    height: 3px;
+    background: #fff;
+    margin: 0px 10px 0px;
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    transform: rotate(0deg) translate(0, 4px);
+    background: green;
+    transition: 0.5s;
+  }
+  
+  
+  
+  .bar2 {
+    width: 45px;
+    height: 3px;
+    background: #fff;
+    margin: 0px 10px 0px;
+    -webkit-transform: rotate(90deg) translate(0, 0);
+    transform: rotate(90deg) translate(0, 0);
+    background: green;
+    transition: 0.5s;
+  }
+
+  .add-widget-menu-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 1840px;
+    height: 50px;
+    padding-top: 20px;
+    z-index: 999;
+  }
+
+  .sidebar {
+    position: fixed;
+
+    width: 100%;
+    height: 300px;
+    background: #fff;
+    bottom: -300px;
+    right: 0;
+    left: 0;
+    border: solid #006aa9 1px;
+    transition: all 0.7s ease-out;
+    z-index: 998;
+}
+
+.show-widget-bar {
+    bottom: 0;
   }

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main pages</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="demo.css">
+    <script src="../node_modules/gridstack/dist/gridstack-all.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="main-nav-bar">
+            <div class="main-nav-item" id="monitor">Мониторинг</div>
+            <div class="main-nav-item" id="animals">Животные</div>
+            <div class="main-nav-item" id="equipments">Оборудование</div>
+        </nav>
+        <div class="side-header-bar">
+            <div class="side-header-item" id="header-search"></div>
+            <div class="side-header-item" id="burger-menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="burger-nav">
+                <div class="logout" id="logout">
+                    <div class="logoutIcon"></div>
+                    <div class="logoutTitle">Выход</div>
+                </div>
+                <div class="settings" id="burger-settings">
+                    <div class="burgerSettingsIcon"></div>
+                    <div class="logoutTitle">Параметры</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="page">
+        <div class="grid-stack grid-stack-instance-1 grid-stack-animate ui-droppable" gs-current-row="4"
+            style="height: 100%; margin-right: 40px; min-width: 1860px;">
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="0" gs-w="2"
+                gs-h="2" gs-no-resize="true" gs-id="no_resize">
+                <div class="grid-stack-item-content">
+                    <div class="widget-table">
+                        <div class="widget-table-header">
+                            <div class="widget-table-icon" id="robot-1">
+                            </div>
+                            <div class="widget-table-title">
+                                <div class="robot-name">УДР</div>
+                                <div class="robot-number">1 - 1</div>
+                            </div>
+                            <div class="widget-table-search"></div>
+                        </div>
+                        <div class="widget-table-body">
+                            <div class="widget-tb-item-list">
+                                <div class="widget-table-item">
+                                    <div class="widget-table-item-icon time"></div>
+                                    <div class="widget-table-item-title">3 мин 59 сек
+                                    </div>
+                                </div>
+                                <div class="widget-table-item">
+                                    <div class="widget-table-item-icon cow-number"></div>
+                                    <div class="widget-table-item-title">54321</div>
+                                </div>
+                                <div class="widget-table-item">
+                                    <div class="widget-table-item-icon milk-value"></div>
+                                    <div class="widget-table-item-title">10,6 / 12,8</div>
+                                </div>
+                                <div class="widget-table-item">
+                                    <div class="widget-table-item-icon drain"></div>
+                                    <div class="widget-table-item-title">Слив</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-resizable-handle ui-resizable-se" style="z-index: 100; user-select: none;"></div>
+            </div>
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="2" gs-y="0" gs-w="2"
+                gs-h="2" gs-no-resize="true" gs-id="no_resize" style="">
+                <div class="grid-stack-item-content">
+                    <div class="widget-table">
+                        <div class="widget-table-header">
+                            <div class="widget-table-icon" id="robot-2"></div>
+                            <div class="widget-table-title">
+                                <div class="robot-name">УДР</div>
+                                <div class="robot-number">2 - 1</div>
+                            </div>
+                            <div class="widget-table-search"></div>
+                        </div>
+                        <div class="widget-table-body">
+                            <div class="widget-tb-item-list">
+                                <div class="widget-table-item">
+                                    <div class="widget-table-item-icon time"></div>
+                                    <div class="widget-table-item-title">13 мин 59 сек
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-resizable-handle ui-resizable-se" style="z-index: 100; user-select: none;"></div>
+            </div>
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="4" gs-y="0" gs-w="1"
+                gs-h="1" gs-no-resize="true" gs-id="no_resize" style="">
+                <div class="grid-stack-item-content">
+                    <div class="widget-tiles-item" id="tiles-1-1">
+                        <div class="tile-state">
+                            <div class="widget-tiles-title">Дойных животных</div>
+                            <div class="widget-tiles-changes"></div>
+                            <div class="widget-tiles-value">156</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-resizable-handle ui-resizable-se" style="z-index: 100; user-select: none;"></div>
+            </div>
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" id="tiles-1-2" gs-x="5"
+                gs-y="0" gs-w="1" gs-h="1" gs-no-resize="true" gs-id="no_resize" style="">
+                <div class="grid-stack-item-content">
+                    <div class="widget-tiles-item">
+                        <div class="tile-state">
+                            <div class="widget-tiles-title">Несортовое молоко</div>
+                            <div class="widget-tiles-changes">-9%</div>
+                            <div class="widget-tiles-value">1265</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-resizable-handle ui-resizable-se" style="z-index: 100; user-select: none;"></div>
+            </div>
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" id="tiles-1-3" gs-x="4"
+                gs-y="1" gs-w="1" gs-h="1" gs-no-resize="true" gs-id="no_resize" style="">
+                <div class="grid-stack-item-content">
+                    <div class="widget-tiles-item">
+                        <div class="tile-state">
+                            <div class="widget-tiles-title">Несортовое молоко</div>
+                            <div class="widget-tiles-changes"></div>
+                            <div class="widget-tiles-value">1265</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-resizable-handle ui-resizable-se" style="z-index: 100; user-select: none;"></div>
+            </div>
+            <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="2" gs-w="4"
+                gs-h="2" gs-no-resize="true" gs-id="no_resize" style="">
+                <div class="grid-stack-item-content">
+                    <div class="widget-journal">
+                        <div class="widget-journal-header">
+                            <div class="widget-journal-icon"></div>
+                            <div class="widget-journal-title">Журнал событий
+                            </div>
+                            <div class="widget-journal-search"></div>
+                        </div>
+                        <div class="widget-journal-body">
+                            <div class="widget-journal-item-list">
+                                <div class="widget-journal-item">
+                                    <div class="widget-journal-item-icon time"></div>
+                                    <div class="widget-journal-item-title">УДР.1 Нет потока молока ЛП
+                                    </div>
+                                    <div class="widget-journal-time">10:15</div>
+                                </div>
+                                <div class="widget-journal-item">
+                                    <div class="widget-journal-item-icon cow-number"></div>
+                                    <div class="widget-journal-item-title">УДР 2. Нет потока молока ЛП</div>
+                                    <div class="widget-journal-time">10:15</div>
+                                </div>
+                                <div class="widget-journal-item">
+                                    <div class="widget-journal-item-icon milk-value"></div>
+                                    <div class="widget-journal-item-title">УДР 2. Идентификация</div>
+                                    <div class="widget-journal-time">10:15</div>
+                                </div>
+                                <div class="widget-journal-item">
+                                    <div class="widget-journal-item-icon drain"></div>
+                                    <div class="widget-journal-item-title">УДР 2. Неправильная команда Манипулятору
+                                    </div>
+                                    <div class="widget-journal-time">10:15</div>
+                                </div>
+                                <div class="widget-journal-item">
+                                    <div class="widget-journal-item-icon drain"></div>
+                                    <div class="widget-journal-item-title">УДР 1. Ошибка датчика потока ПЗ</div>
+                                    <div class="widget-journal-time">10:15</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-resizable-handle ui-resizable-se" style="z-index: 100; user-select: none;"></div>
+            </div>
+
+
+
+
+        </div>
+        <div class="widget-logo"></div>
+        <div class="add-widget-menu-btn" id="widget-menu-btn" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+        </div>
+        <div class="trash ui-droppable ui-droppable-over" id="trash">
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="grid-stack-item ui-draggable" gs-w="2" gs-h="2" gs-no-resize="true" gs-id="no_resize">
+                <div class="grid-stack-item-content">
+                    <div class="grid-stack-tittle">Gri ME</div>
+                    <div class=" widget-move">
+
+                    </div>
+                    <div class="widget-table widget-content">
+                        <div class="widget-table-header">
+                            <div class="widget-table-icon" id="robot-1">
+                            </div>
+                            <div class="widget-table-title">
+                                <div class="robot-name">УДР</div>
+                                <div class="robot-number">1 - 1</div>
+                            </div>
+                            <div class="widget-table-search"></div>
+                        </div>
+                        <div class="widget-table-body">
+                            <div class="widget-tb-item-list">
+                                <div class="widget-table-item">
+                                    <div class="widget-table-item-icon time"></div>
+                                    <div class="widget-table-item-title">3 мин 59 сек
+                                    </div>
+                                </div>
+                                <div class="widget-table-item">
+                                    <div class="widget-table-item-icon cow-number"></div>
+                                    <div class="widget-table-item-title">54321</div>
+                                </div>
+                                <div class="widget-table-item">
+                                    <div class="widget-table-item-icon milk-value"></div>
+                                    <div class="widget-table-item-title">10,6 / 12,8</div>
+                                </div>
+                                <div class="widget-table-item">
+                                    <div class="widget-table-item-icon drain"></div>
+                                    <div class="widget-table-item-title">Слив</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            console.log("Библиотека работает!")
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+    <script type="text/javascript">
+        let grid = GridStack.init({
+            float: true,
+            cellHeight: 155,
+            margin: 5,
+            acceptWidgets: true,
+            removable: ".trash",
+            // old way, use global setupDragIn() instead
+            // dragIn: '.sidebar .grid-stack-item', // add draggable to class
+            // dragInOptions: { appendTo: 'body', helper: 'clone' },
+
+        });
+        addEvents(grid);
+
+
+        GridStack.setupDragIn('.sidebar .grid-stack-item', { appendTo: 'body', helper: 'clone' });
+
+      // grid.setStatic(false); // TEST enable after disabled
+
+    </script>
+
+</body>
+
+</html>

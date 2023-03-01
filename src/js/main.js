@@ -15,20 +15,7 @@ window.addEventListener("unload", function () {
 });
 
 
-$(function () { //DOM Ready
 
-    $(".gridster ul").gridster({
-        widget_margins: [5, 5],
-        widget_base_dimensions: [146, 146],
-        min_cols: 7,
-        resize: {
-            enabled: true,
-            max_size: [4, 2],
-            min_size: [1, 1]
-        }
-    });
-
-});
 
 let $burger = $("#burger-menu");
 let $burgerMenu = $(".burger-nav")
@@ -56,3 +43,18 @@ window.onbeforeunload = () => {
     })
 }
 
+const $widgetMenuButton = $("#widget-menu-btn")
+const $widgetMenuBar = $("#sidebar")
+
+$widgetMenuButton.on("click", function() {
+    hideWidgetBar()
+})
+
+$widgetMenuBar.on("mouseout", function(){
+    hideWidgetBar()
+})
+
+let hideWidgetBar = function() {
+    $widgetMenuButton.toggleClass("change");
+    $("#sidebar").toggleClass("show-widget-bar");
+}
