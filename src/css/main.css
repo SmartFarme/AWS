@@ -120,7 +120,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 145px;
 }
 
 #tiles-1-1 .tile-state {
@@ -382,8 +382,8 @@ li {
     left: 35px;
 }
 
-.add-widget-bottom {
-
+.widget-tiles-item {
+    background-color: #0B9DDD;
 }
 
 .burger-nav {

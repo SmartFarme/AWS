@@ -72,3 +72,5 @@ function addEvents(grid, id) {
       console.log(`${g} resizestop ${el.textContent} size: (${n.w}x${n.h}) = (${Math.round(rec.width)}x${Math.round(rec.height)})px`);
     });
   }
+
+  

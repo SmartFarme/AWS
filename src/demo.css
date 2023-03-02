@@ -10,7 +10,9 @@ a {
 
 
 
-
+.sidebar {
+  display: flex;
+}
 
 .grid-stack-item-content {
 
@@ -37,6 +39,7 @@ a {
   width: 125px;
   height: 125px;
   border: 2px dashed blue;
+  z-index: 2222;
 }
 
 .trash {
@@ -61,7 +64,7 @@ a {
   width: 125px;
   height: 125px;
   border: 2px dashed blue;
-
+  margin: 10px;
   line-height: 35px;
   z-index: 10;
   background: rgba(67, 122, 194, 0.1);

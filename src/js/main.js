@@ -50,8 +50,9 @@ $widgetMenuButton.on("click", function() {
     hideWidgetBar()
 })
 
-$widgetMenuBar.on("mouseout", function(){
-    hideWidgetBar()
+$("#grid-stack-instance-1").on("mouseover", function(){
+    $widgetMenuButton.removeClass("change");
+    $("#sidebar").removeClass("show-widget-bar");
 })
 
 let hideWidgetBar = function() {
