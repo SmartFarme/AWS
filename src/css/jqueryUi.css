@@ -979,8 +979,9 @@ a.ui-button:focus {
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-	border: 1px solid #003eff;
-	background: red;
+	font-family: Cera-regular;
+	border: 1px solid black;
+	background: #25BE2C;
 	font-weight: normal;
 	color: #ffffff;
 }
