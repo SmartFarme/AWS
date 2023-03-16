@@ -1,18 +1,18 @@
-let loginCheck = sessionStorage.getItem("current")
+// let loginCheck = sessionStorage.getItem("current")
 
-document.addEventListener("DOMContentLoaded", function () {
-    if (loginCheck == null) {
-        location.href = "http://127.0.0.1:5502/src/index.html"
-    } else {
-        console.log("Авторизован")
-    }
-})
+// document.addEventListener("DOMContentLoaded", function () {
+//     if (loginCheck == null) {
+//         location.href = "http://127.0.0.1:5502/src/index.html"
+//     } else {
+//         console.log("Авторизован")
+//     }
+// })
 
-window.addEventListener("unload", function () {
-    mainInstance.post("auth/logout", { email: sessionStorage.current, logoutDateTime: (new Date).toISOString() }).then((response) => {
-        sessionStorage.removeItem("current");
-    })
-});
+// window.addEventListener("unload", function () {
+//     mainInstance.post("auth/logout", { email: sessionStorage.current, logoutDateTime: (new Date).toISOString() }).then((response) => {
+//         sessionStorage.removeItem("current");
+//     })
+// });
 
 
 

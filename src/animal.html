@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main pages</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animal.css">
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="demo.css">
+    <script src="../node_modules/gridstack/dist/gridstack-all.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="main-nav-bar">
+            <div class="main-nav-item" id="monitor">Мониторинг</div>
+            <div class="main-nav-item" id="animals">Животные</div>
+            <div class="main-nav-item" id="equipments">Оборудование</div>
+        </nav>
+        <div class="side-header-bar">
+            <div class="side-header-item" id="header-search"></div>
+            <div class="side-header-item" id="burger-menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <div class="burger-nav">
+                <div class="logout" id="logout">
+                    <div class="logoutIcon"></div>
+                    <div class="logoutTitle">Выход</div>
+                </div>
+                <div class="settings" id="burger-settings">
+                    <div class="burgerSettingsIcon"></div>
+                    <div class="logoutTitle">Параметры</div>
+                </div>
+            </div>
+        </div>
+        <div class="widget-logo"></div>
+    </header>
+    <div class="page" id="page">
+        <div class="animals-memu" id="animals-memu">
+            <ul id="animals-menu-list">
+                <li>
+                    <div id="review">
+                        <img width="30" height="30" src="./svg/cow-id.svg" class="img-margin">
+                        <span>Обзор</span></img>
+                        <button class=button></button>
+                    </div>
+                    <ul>
+                        <li>Ссылка 1</a></li>
+                        <li>Ссылка 2</a></li>
+                        <li>Ссылка 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="review">
+                        <img width="30" height="30" src="./svg/cow-id.svg" class="img-margin">Доение</img>
+                        <button class=button></button>
+                    </div>
+                    <ul>
+                        <li>Ссылка 1</a></li>
+                        <li>Ссылка 2</a></li>
+                        <li>Ссылка 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="review">
+                        <img width="30" height="30" src="./svg/cow-id.svg" class="img-margin">Кормление</img>
+                        <button class=button></button>
+                    </div>
+                    <ul>
+                        <li>Ссылка 1</a></li>
+                        <li>Ссылка 2</a></li>
+                        <li>Ссылка 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="review">
+                        <img width="30" height="30" src="./svg/cow-id.svg" class="img-margin">Сортировка</img>
+                        <button class=button></button>
+                    </div>
+                    <ul>
+                        <li>Ссылка 1</a></li>
+                        <li>Ссылка 2</a></li>
+                        <li>Ссылка 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="review">
+                        <img width="30" height="30" src="./svg/cow-id.svg" class="img-margin">Воспроизводство</img>
+                        <button class=button></button>
+                    </div>
+                    <ul>
+                        <li>Ссылка 1</a></li>
+                        <li>Ссылка 2</a></li>
+                        <li>Ссылка 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="review">
+                        <img width="30" height="30" src="./svg/cow-id.svg" class="img-margin">Здоровье</img>
+                        <button class=button></button>
+                    </div>
+                    <ul>
+                        <li>Ссылка 1</a></li>
+                        <li>Ссылка 2</a></li>
+                        <li>Ссылка 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="review">
+                        <img width="30" height="30" src="./svg/cow-id.svg" class="img-margin">Уведомления</img>
+                        <button class=button></button>
+                    </div>
+                    <ul>
+                        <li>Ссылка 1</a></li>
+                        <li>Ссылка 2</a></li>
+                        <li>Ссылка 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="aminals-main-field" id="animals-main-field">
+            <div class="review-container">
+                <div class="animals-review">
+                    <div class="animals-review-title">
+                        <span>Обзор</span>
+                        <button class="add-cow-button"></button>
+                        <button class="field-button"></button>
+                    </div>
+                </div>
+                <div class="animals-review-item">
+                    <div class="animals-review-title">
+                        <div class="animals-review-main">
+                            <span>Дойные</span>
+                            <div class="value">20 животных</div>
+                            <dic class="problem-value">2 требуют внимания</dic>
+                        </div>
+                        <button class="add-cow-button"></button>
+                        <button class="field-button"></button>
+                    </div>
+                    <div class="demostration">
+                        <ul class="cow-list">
+                            <li class="cow-list-item">1</li>
+                            <li class="cow-list-item">2</li>
+                            <li class="cow-list-item">3</li>
+                            <li class="cow-list-item">4</li>
+                            <li class="cow-list-item">5</li>
+                            <li class="cow-list-item">6</li>
+                            <li class="cow-list-item">7</li>
+                            <li class="cow-list-item">8</li>
+                            <li class="cow-list-item">9</li>
+                            <li class="cow-list-item">10</li>
+                            <li class="cow-list-item">11</li>
+                            <li class="cow-list-item">12</li>
+                            <li class="cow-list-item">13</li>
+                            <li class="cow-list-item">14</li>
+                            <li class="cow-list-item">15</li>
+                            <li class="cow-list-item">16</li>
+                            <li class="cow-list-item">17</li>
+                            <li class="cow-list-item">18</li>
+                            <li class="cow-list-item">19</li>
+                            <li class="cow-list-item">20</li>
+                        </ul>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="animals-review-item">
+                    <div class="animals-review-title">
+                        <span>Нетели</span>
+                        <button class="add-cow-button"></button>
+                        <button class="field-button"></button>
+                    </div>
+                </div>
+                <div class="animals-review-item">
+                    <div class="animals-review-title">
+                        <span>Быки</span>
+                        <button class="add-cow-button"></button>
+                        <button class="field-button"></button>
+                    </div>
+                </div>
+                <div class="animals-review-item">
+                    <div class="animals-review-title">
+                        <span>Другие</span>
+                        <button class="add-cow-button"></button>
+                        <button class="field-button"></button>
+                    </div>
+                </div>
+                <div class="animals-review-add">
+                    <div class="animals-review-title">
+                        <div class="animals-review-main-info">
+                            <button class="add-group-button"></button>
+                            <span>Добавить группу</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+        //Указываем по нажатию на какой элемент должны открыватся подменю
+        $("#animals-menu-list li #review").click(function () {
+            console.log(22)
+            if (false == $(this).closest("#review").next().is(':visible')) {
+                $('#animals-menu-list ul').slideUp(350);
+                $("#animals-menu-list .button").removeClass("button-active");
+            }
+            $(this).closest("#review").next().slideToggle(350);
+            $(this).children(".button").toggleClass("button-active");
+        });
+
+        $(".field-button").click(function () {
+            console.log(22)
+            if (false == $(this).closest(".animals-review-title").next().is(':visible')) {
+                $('.demostration').slideUp(350);
+                $("#animals-menu-list .button").removeClass("button-active");
+            }
+            $(this).closest(".animals-review-title").next().slideToggle(350);
+            $(this).children(".button").toggleClass("button-active");
+        });
+
+
+
+    </script>
+</body>
+
+</html>

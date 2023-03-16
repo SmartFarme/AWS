@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main pages</title>
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="css/main.css">
     <script src="../node_modules/axios/dist/axios.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -42,7 +42,7 @@
     </header>
     <div class="page" id="page">
         <div class="grid-stack grid-stack-instance-1 grid-stack-animate ui-droppable" id="grid-stack-instance-1"
-            gs-current-row="4" style="height: 100%; margin-right: 40px; min-width: 1860px;">
+            gs-current-row="4" style="height: 100%; margin-right: 40px; width: 1860px;">
             <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="0" gs-w="2"
                 gs-h="2" gs-no-resize="true" gs-id="no_resize">
                 <div class="grid-stack-item-content">
@@ -146,7 +146,7 @@
                 <div class="ui-resizable-handle ui-resizable-se" style="z-index: 100; user-select: none;"></div>
             </div>
             <div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="2" gs-w="4"
-                gs-h="2" gs-no-resize="true" gs-id="no_resize" style="">
+                gs-h="2" gs-no-resize="true" gs-id="no_resize">
                 <div class="grid-stack-item-content">
                     <div class="widget-journal">
                         <div class="widget-journal-header">
@@ -331,7 +331,13 @@
             // dragInOptions: { appendTo: 'body', helper: 'clone' },
 
         });
-        addEvents(grid);
+        function resizeGrid() {
+            grid.column(12)
+
+        }
+        resizeGrid();
+
+        window.addEventListener('resize', function () { resizeGrid() });
 
 
         GridStack.setupDragIn('.sidebar .grid-stack-item', { appendTo: 'body', helper: 'clone' });

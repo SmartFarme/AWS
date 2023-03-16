@@ -1,0 +1,215 @@
+#monitor:after {
+    content: "";
+    display: none;
+}
+
+#animals:after {
+    content: "";
+    margin-top: 5px;
+    padding: 0px;
+    height: 2px;
+    display: block;
+    background-color: white;
+}
+
+.widget-logo {
+    background-image: url(../svg/logo-white.svg);
+    width: 200px;
+    height: 75px;
+    z-index: 200;
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 15px;
+}
+
+.page {
+    display: flex;
+    padding: 50px 0 0;
+}
+
+.animals-memu {
+    width: 300px;
+    background-color: #006aa9;
+}
+
+#animals-menu-list {
+    list-style: none;
+    padding: 5px 0 0;
+    margin: 0px;
+}
+
+#animals-menu-list div {
+    list-style: none;
+    margin: 0px;
+    text-decoration: none;
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    background-color: #006aa9;
+    justify-content: start;
+    position: relative;
+    padding: 0 15px 0;
+    font-family: Cera-regular;
+    align-items: center;
+}
+
+.img-margin {
+    margin-right: 10px;
+}
+
+#animals-menu-list ul {
+    list-style: none;
+    font-size: 14px;
+    color: #fff;
+    display: none;
+    font-family: Cera-regular;
+}
+
+.demostration {
+    width: calc(100% - 50px);
+    height: 400px;
+    background-color: greenyellow;
+    display: none;
+}
+
+#animals-menu-list ul li {
+    display: flex;
+    align-items: center;
+    padding-left: 25%;
+    height: 40px;
+}
+
+.button {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 20px;
+    top: auto;
+    background-color: red;
+    z-index: 2222;
+    outline: none;
+    border: none;
+}
+
+.cow-list-item {
+    width: 80px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+.cow-list {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.field-button {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 7px;
+    top: 25%;
+    background-color: red;
+    z-index: 2222;
+    outline: none;
+    border: none;
+}
+
+.button-active {
+    background-color: green;
+}
+
+#review .title {
+    background-image: url(../svg/cow-id.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aminals-main-field {
+    width: calc(100% - 300px);
+    padding-top: 10px;
+}
+
+.animals-review, .animals-review-item, .animals-review-add {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+    border-bottom: #006aa9 2px solid;
+}
+
+.animals-review span {
+    font-size: 24px;
+    font-family: Cera-regular;
+    font-weight: 500;
+}
+
+.animals-review-item span {
+    font-size: 16px;
+    font-family: Cera-regular;
+    font-weight: 700;
+}
+
+.animals-review-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+   
+    height: 50px;
+}
+
+/* .animals-review:after, .animals-review-item::after, .animals-review-add::after {
+    content: "";
+    margin-top: 5px;
+    padding: 0px;
+    height: 2px;
+    display: block;
+    background-color: #006aa9;
+} */
+
+.add-cow-button {
+    background-image: url(/src/svg/cow-id.svg);
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    border: none;
+    background-position: center;
+    background-color: #fff;
+    margin-right: 50px
+}
+
+.add-group-button {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    z-index: 2222;
+    outline: none;
+    border: none;
+}
+
+.animals-review-main-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+}
+
+.animals-review-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 35%;
+}
+
+.animals-review-add span {
+    margin-left: 15px;
+    font-family: Cera-regular;
+    font-size: 14px;
+}
+
