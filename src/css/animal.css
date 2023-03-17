@@ -1,3 +1,21 @@
+@font-face {
+    font-family: Cera-regular;
+    src: url(../fonts/CeraPro-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Cera-medium;
+    src: url(../fonts/CeraPro-Medium.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Cera-bold;
+    src: url(../fonts/CeraPro-Bold.ttf);
+    font-style: normal;
+}
+
 #monitor:after {
     content: "";
     display: none;
@@ -68,11 +86,29 @@
     font-family: Cera-regular;
 }
 
-.demostration {
+.add-animal {
+    background-image: url(../svg/Add_animal.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 80px;
+    height: 55px;
+    padding: 0;
+}
+
+.group-container {
     width: calc(100% - 50px);
-    height: 400px;
-    background-color: greenyellow;
+    height: fit-content;
     display: none;
+    padding-bottom: 10px;
+}
+
+.cow-list-item .count {
+    font-size: 18px;
+}
+
+.cow-list-item .cow-type {
+    font-size: 12px;
 }
 
 #animals-menu-list ul li {
@@ -83,22 +119,36 @@
 }
 
 .button {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     position: absolute;
     right: 20px;
     top: auto;
-    background-color: red;
+    background-image: url(../svg/arrow-white.svg);
+    background-position: center;
+    background-color: #006aa9;
+    background-size: 20px;
     z-index: 2222;
     outline: none;
     border: none;
+    transition: all 0.5s ease-out;
 }
 
-.cow-list-item {
+.cow-list-item, .add-cow-list-item {
     width: 80px;
     height: 50px;
     background-color: #fff;
-    border: 2px solid black;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+
+.add-cow-list-item {
+    padding: 0;
+    border: none;
+    position: relative;
 }
 
 .cow-list {
@@ -108,20 +158,24 @@
     gap: 10px;
 }
 
-.field-button {
+.field-button, .all-field-button {
     width: 25px;
     height: 25px;
     position: absolute;
     right: 7px;
     top: 25%;
-    background-color: red;
-    z-index: 2222;
+    background-image: url(../svg/arrow-blue.svg);
+    background-color: white;
+    background-position: center;
+    z-index: 1;
     outline: none;
     border: none;
+    transition: all 0.5s ease-out;
 }
 
 .button-active {
-    background-color: green;
+    transform: rotate(180deg);
+    transition: all 0.5s ease-out;
 }
 
 #review .title {
@@ -141,7 +195,13 @@
     border-bottom: #006aa9 2px solid;
 }
 
-.animals-review span {
+.animals-food {
+    width: calc(100% - 100px);
+    margin: 0 50px;
+}
+
+
+.animals-review span, .animals-food span {
     font-size: 24px;
     font-family: Cera-regular;
     font-weight: 500;
@@ -153,7 +213,7 @@
     font-weight: 700;
 }
 
-.animals-review-title {
+.animals-review-title, .animals-food-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,6 +222,9 @@
     height: 50px;
 }
 
+.animals-food-title {
+    border-bottom: #006aa9 2px solid;
+} 
 /* .animals-review:after, .animals-review-item::after, .animals-review-add::after {
     content: "";
     margin-top: 5px;
@@ -171,8 +234,7 @@
     background-color: #006aa9;
 } */
 
-.add-cow-button {
-    background-image: url(/src/svg/cow-id.svg);
+.add-cow-button, .edit-group, .save-food-setting {
     background-size: 40px;
     width: 40px;
     height: 40px;
@@ -180,13 +242,45 @@
     border: none;
     background-position: center;
     background-color: #fff;
-    margin-right: 50px
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.add-cow-button {
+    background-image: url(/src/svg/Add_animal.svg);
+}
+
+.save-food-setting {
+    background-image: url(../svg/save.svg);
+    background-size: 25px;
+    margin-right: 10px;
+}
+
+.edit-group{
+    background-image: url(/src/svg/edit.svg);
+    background-size: 25px;
+    padding-right: 5px;
+}
+
+.min-one-day {
+    background-image: url(/src/svg/MinPr.svg)
+}
+
+.max-one-day {
+    background-image: url(/src/svg/MaxPr.svg)
+}
+
+.time-to-eat {
+    background-image: url(/src/svg/TimeToEat.svg)
 }
 
 .add-group-button {
     width: 25px;
     height: 25px;
-    background-color: red;
+    background-image: url(../svg/plus.svg);
+    background-position: center;
+    background-color: #fff;
+    background-size: 40px;
     z-index: 2222;
     outline: none;
     border: none;
@@ -211,5 +305,83 @@
     margin-left: 15px;
     font-family: Cera-regular;
     font-size: 14px;
+}
+
+.active-animal-item {
+    font-weight: 700;
+}
+
+.animal-container {
+    display: none;
+}
+
+.animals-page-active {
+    display: block;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.food-setting span {
+    font-size: 16px
+}
+
+.food-settig-icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 45px;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+   
+}
+
+.single-give {
+    background-image: url(../svg/max-single.svg);
+}
+
+.single-give-24 {
+    background-image: url(../svg/max-single-24.svg);
+}
+
+.max-green {
+    background-image: url(../svg/max-green.svg);
+}
+
+.max-red {
+    background-image: url(../svg/max-red.svg);
+}
+
+.single-24 {
+    background-image: url(../svg/single-24.svg);
+}
+
+.time-add {
+    background-image: url(../svg/timeAdd.svg);
+}
+
+.food-setting-item {
+    display: flex;
+    align-items: center;
+}
+
+.food-setting {
+    padding-top: 20px;
+}
+
+.food-input {
+    margin: 0 10px 0 25px;
+}
+
+.food-setting-container {
+    display: flex;
+    gap: 150px;
 }
 

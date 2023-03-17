@@ -1,3 +1,9 @@
+@font-face {
+    font-family: Cera-regular;
+    src: url(../fonts/CeraPro-Regular.ttf);
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -42,9 +48,7 @@ body {
     margin-bottom: 5px;
 }
 
-#monitor {
-    font-family: Cera-bold;
-}
+
 
 
 #monitor:after {
@@ -403,7 +407,7 @@ li {
 }
 
 .burger-nav {
-    position: fixed;
+    position: absolute;
 
     width: 320px;
     height: 150px;
@@ -413,7 +417,7 @@ li {
     right: -320px;
 
     transition: all 0.5s ease-out;
-    z-index: 2;
+    z-index: 5552;
 }
 
 .show {
