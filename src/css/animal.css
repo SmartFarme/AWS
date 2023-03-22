@@ -301,6 +301,10 @@
     width: 35%;
 }
 
+.animals-review-main span {
+    width: 60px;
+}
+
 .animals-review-add span {
     margin-left: 15px;
     font-family: Cera-regular;
@@ -319,15 +323,8 @@
     display: block;
 }
 
-input[type=number] {
-    -moz-appearance:textfield; /* Firefox */
-}
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+
 
 .food-setting span {
     font-size: 16px

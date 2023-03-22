@@ -47,10 +47,10 @@
         <div class="animals-memu" id="animals-memu">
             <ul id="animals-menu-list">
                 <li>
-                    <div id="review" class="animals-menu-item">
+                    <div id="review" class="animals-menu-item active-animal-item">
                         <img width="30" height="30" src="./svg/Group.svg" class="img-margin">
                         <span>Обзор</span></img>
-                        <button class=button></button>
+                        <button class="button"></button>
                     </div>
                     <ul>
                         <li>Карторчка животного</a></li>
@@ -129,7 +129,7 @@
 
         </div>
         <div class="aminals-main-field" id="animals-main-field">
-            <div class="animal-container" id="review-page">
+            <div class="animal-container animals-page-active" id="review-page">
                 <div class="animals-review">
                     <div class="animals-review-title">
                         <span>Обзор</span>
@@ -141,144 +141,61 @@
                     <div class="animals-review-title">
                         <div class="animals-review-main">
                             <span>Дойные</span>
-                            <div class="value">20 животных</div>
-                            <dic class="problem-value">2 требуют внимания</dic>
+                            <div class="value" id="flockValue0">20 животных</div>
+                            <dic class="problem-value"></dic>
                         </div>
                         <button class="edit-group"></button>
                         <button class="field-button"></button>
                     </div>
                     <div class="group-container">
-                        <ul class="cow-list">
-                            <li class="cow-list-item">
-                                <div class="count">1</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">2</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">3</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">4</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">5</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">6</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">7</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">8</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">9</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">10</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">11</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">12</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">13</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">14</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">15</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">16</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">17</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">18</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">19</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="cow-list-item">
-                                <div class="count">20</div>
-                                <div class="cow-type">Стельная</div>
-                            </li>
-                            <li class="add-cow-list-item">
-                                <div class="add-animal">
+                        <ul class="cow-list" id="flock0">
+                        </ul>
+                    </div>
+                </div>
+                <div class="animals-review-item">
+                    <div class="animals-review-title">
+                        <div class="animals-review-main">
+                            <span>Нетели</span>
+                            <div class="value" id="flockValue1">20 животных</div>
+                            <dic class="problem-value"></dic>
+                        </div>
+                        <button class="edit-group"></button>
+                        <button class="field-button"></button>
+                    </div>
+                    <div class="group-container">
+                        <ul class="cow-list" id="flock1">
+                        </ul>
+                    </div>
+                </div>
+                <div class="animals-review-item">
+                    <div class="animals-review-title">
+                        <div class="animals-review-main">
+                            <span>Быки</span>
+                            <div class="value" id="flockValue2">20 животных</div>
+                            <dic class="problem-value"></dic>
+                        </div>
+                        <button class="edit-group"></button>
+                        <button class="field-button"></button>
+                    </div>
+                    <div class="group-container">
+                        <ul class="cow-list" id="flock2">
 
-                                </div>
-                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="animals-review-item">
                     <div class="animals-review-title">
-                        <span>Нетели</span>
+                        <div class="animals-review-main">
+                            <span>Другие</span>
+                            <div class="value" id="flockValue3">20 животных</div>
+                            <dic class="problem-value"></dic>
+                        </div>
                         <button class="edit-group"></button>
                         <button class="field-button"></button>
                     </div>
                     <div class="group-container">
-                        <ul class="cow-list">
-                            <li class="add-cow-list-item">
-                                <div class="add-animal">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="animals-review-item">
-                    <div class="animals-review-title">
-                        <span>Быки</span>
-                        <button class="edit-group"></button>
-                        <button class="field-button"></button>
-                    </div>
-                    <div class="group-container">
-                        <ul class="cow-list">
-                            <li class="add-cow-list-item">
-                                <div class="add-animal">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="animals-review-item">
-                    <div class="animals-review-title">
-                        <span>Другие</span>
-                        <button class="edit-group"></button>
-                        <button class="field-button"></button>
-                    </div>
-                    <div class="group-container">
-                        <ul class="cow-list">
-                            <li class="add-cow-list-item">
-                                <div class="add-animal">
-                                </div>
-                            </li>
+                        <ul class="cow-list" id="flock3">
+
                         </ul>
                     </div>
                 </div>
@@ -478,6 +395,63 @@
 
         $("#monitor").click(function () {
             location.href = "http://127.0.0.1:5502/src/main.html"
+        })
+
+        class Cow {
+            constructor(id, type) {
+                this.id = id;
+                this.type = type;
+            };
+        }
+
+        let herd = {
+            "herd0": [new Cow("1", "Стельная"), new Cow("2", "Стельная",), new Cow("3", "Стельная",)],
+            "herd1": [new Cow("1", "НеСтельная"), new Cow("2", "НеСтельная",), new Cow("3", "НеСтельная",), new Cow("5", "НеСтельная",), new Cow("5", "НеСтельная",), new Cow("5", "НеСтельная",), new Cow("5", "НеСтельная",), new Cow("5", "НеСтельная",), new Cow("5", "НеСтельная",)],
+            "herd2": [],
+            "herd3": [],
+        }
+
+        function populateCows(currentHerd, herdView, index) {
+            herdView.find("li").each(function () {
+                $(this).remove()
+            })
+            $.each(currentHerd, function (index, value) {
+                const card = `<li class="cow-list-item" data-index=${index}>
+                                <div class="count">${value["id"]}</div>
+                                <div class="cow-type">${value["type"]}</div>
+                            </li>`
+                const element = document.createElement('li');
+                element.innerHTML = card;
+
+                herdView.append(element);
+                console.log(herdView.length)
+            })
+            herdView.append(`<li class="add-cow-list-item">
+                                <div class="add-animal">
+                                </div>
+                            </li>`)
+            $(`#flockValue${index}`).text(`${currentHerd.length} животных`)
+            // $(`#flockValue${index}`).text(herdView.length)
+
+            // $("#flock0").closest(".animals-review-item").children(".animals-review-title").children(".animals-review-main").children(".value2").text()
+        }
+
+        $(".cow-list").each(function (index) {
+            let cowList = $(`#flock${index}`);
+            console.log(cowList)
+            populateCows(Object.values(herd)[index], cowList, index);
+            let $current = $(this);
+
+            $current.on("click", ".add-animal", function () {
+                console.log(index)
+                let cowList = $(`#flock${index}`);
+                let id = prompt("Номер")
+                let type = prompt("Тип")
+                newCow = new Cow(id, type)
+    
+                Object.values(herd)[index].push(newCow);
+                populateCows(Object.values(herd)[index], cowList, index);
+            })
         })
 
     </script>
