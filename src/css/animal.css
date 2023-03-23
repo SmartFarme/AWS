@@ -195,10 +195,32 @@
     border-bottom: #006aa9 2px solid;
 }
 
+.food-settings-configs {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    
+}
+
+.settings-configs-item {
+    width: 200px;
+    height: 35px;
+    background-color: #fff;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    color: #006AA9;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
 .animals-food {
     width: calc(100% - 100px);
     margin: 0 50px;
 }
+
+
+
+
 
 
 .animals-review span, .animals-food span {
@@ -323,8 +345,15 @@
     display: block;
 }
 
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
 
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .food-setting span {
     font-size: 16px
@@ -373,12 +402,55 @@
     padding-top: 20px;
 }
 
-.food-input {
-    margin: 0 10px 0 25px;
-}
 
 .food-setting-container {
     display: flex;
     gap: 150px;
 }
 
+.quantity-number input {
+    width: 39px;
+    height: 33px;
+    border-radius: 0; 
+    text-align:center;
+    border: 1px solid #DBE2EA;
+}
+
+.minus-button {border: solid #DBE2EA;
+    border: solid #DBE2EA;
+    border-width: 1px 0px 1px 1px;
+}
+
+.minus-button:hover {border: solid #DBE2EA;
+    border: solid #006AA9;
+    border-width: 1px 1px 1px 1px;
+}
+
+.plus-button {
+    border: solid #DBE2EA;
+    border-width: 1px 1px 1px 0px;
+}
+
+.plus-button:hover {border: solid #DBE2EA;
+    border: solid #006AA9;
+    border-width: 1px 1px 1px 1px;
+}
+
+.quantity-number button:active {
+    background-color: #0B9DDD;
+    border: none;
+}
+
+.quantity-number button {
+    background-color: #fff;
+    font-size: 22px; 
+    width: 38px;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+  }
+
+.quantity-number {
+    margin: 0 10px 0 25px;
+    max-height: 33px;
+}

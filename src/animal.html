@@ -137,76 +137,6 @@
                         <button class="all-field-button"></button>
                     </div>
                 </div>
-                <div class="animals-review-item">
-                    <div class="animals-review-title">
-                        <div class="animals-review-main">
-                            <span>Дойные</span>
-                            <div class="value" id="flockValue0">20 животных</div>
-                            <dic class="problem-value"></dic>
-                        </div>
-                        <button class="edit-group"></button>
-                        <button class="field-button"></button>
-                    </div>
-                    <div class="group-container">
-                        <ul class="cow-list" id="flock0">
-                        </ul>
-                    </div>
-                </div>
-                <div class="animals-review-item">
-                    <div class="animals-review-title">
-                        <div class="animals-review-main">
-                            <span>Нетели</span>
-                            <div class="value" id="flockValue1">20 животных</div>
-                            <dic class="problem-value"></dic>
-                        </div>
-                        <button class="edit-group"></button>
-                        <button class="field-button"></button>
-                    </div>
-                    <div class="group-container">
-                        <ul class="cow-list" id="flock1">
-                        </ul>
-                    </div>
-                </div>
-                <div class="animals-review-item">
-                    <div class="animals-review-title">
-                        <div class="animals-review-main">
-                            <span>Быки</span>
-                            <div class="value" id="flockValue2">20 животных</div>
-                            <dic class="problem-value"></dic>
-                        </div>
-                        <button class="edit-group"></button>
-                        <button class="field-button"></button>
-                    </div>
-                    <div class="group-container">
-                        <ul class="cow-list" id="flock2">
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="animals-review-item">
-                    <div class="animals-review-title">
-                        <div class="animals-review-main">
-                            <span>Другие</span>
-                            <div class="value" id="flockValue3">20 животных</div>
-                            <dic class="problem-value"></dic>
-                        </div>
-                        <button class="edit-group"></button>
-                        <button class="field-button"></button>
-                    </div>
-                    <div class="group-container">
-                        <ul class="cow-list" id="flock3">
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="animals-review-add">
-                    <div class="animals-review-title">
-                        <div class="animals-review-main-info">
-                            <button class="add-group-button"></button>
-                            <span>Добавить группу</span>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="animal-container" id="yeald-page">
                 <div class="animals-review">
@@ -226,28 +156,28 @@
                             <div class="food-setting-item">
                                 <div class="food-settig-icon single-give"></div>
                                 <span style="width: 210px;">Разовая выдача, не более</span>
-                                <input class="food-input kg-input" type="number"
-                                    style="width: 55px; height:30px; border-radius: 0; text-align:center"> кг
+                                <input class="food-input kg-input" type="number" step="0.1">
+                                <span>кг</span>
                             </div>
                             <div class="food-setting-item">
                                 <div class="food-settig-icon single-give-24"></div>
                                 <span style="width: 210px;">Суточная выдача, не более</span>
-                                <input class="food-input kg-input" type="number"
-                                    style="width: 55px; height:30px; border-radius: 0; text-align:center"> кг
+                                <input class="food-input kg-input" type="number" step="0.1">
+                                <span>кг</span>
                             </div>
                         </div>
                         <div class="food-setting">
                             <div class="food-setting-item">
                                 <div class="food-settig-icon max-green"></div>
                                 <span style="width: 330px;">Увеличение суточного рациона, не более</span>
-                                <input class="food-input kg-input" type="number"
-                                    style="width: 55px; height:30px; border-radius: 0; text-align:center"> кг
+                                <input class="food-input kg-input" type="number" step="0.1">
+                                <span>кг</span>
                             </div>
                             <div class="food-setting-item">
                                 <div class="food-settig-icon max-red"></div>
                                 <span style="width: 330px;">Уменьшение суточного рациона, не более</span>
-                                <input class="food-input kg-input" type="number"
-                                    style="width: 55px; height:30px; border-radius: 0; text-align:center"> кг
+                                <input class="food-input kg-input" type="number" step="0.1">
+                                <span>кг</span>
                             </div>
                         </div>
                     </div>
@@ -255,27 +185,32 @@
                 <div class="animals-food">
                     <div class="animals-food-title">
                         <span>Расчет количества корма</span>
-
                     </div>
-                    <div class="food-setting-container">
-                        <div class="food-setting">
-                            <div class="food-setting-item">
-                                <div class="food-settig-icon single-24"></div>
-                                <span>Суточная выдача</span>
-                                <input class="food-input kg-input" type="number"
-                                    style="width: 55px; height:30px; border-radius: 0; text-align:center"> кг
-                            </div>
+
+                    <div class="food-settings-calculate">
+                        <div class="food-settings-configs">
+                            <div class="settings-configs-item food-fixed food-config-active">Фиксированный</div>
+                            <div class="settings-configs-item food-target">Целеой</div>
+                            <div class="settings-configs-item food-combo">Комбинированный</div>
                         </div>
-                        <div class="food-setting">
-                            <div class="food-setting-item">
-                                <div class="food-settig-icon time-add "></div>
-                                <span>Временная прибавка</span>
-                                <input class="food-input kg-input" type="number"
-                                    style="width: 55px; height:30px; border-radius: 0; text-align:center">
-                                <span>кг на</span>
-                                <input class="food-input" type="number"
-                                    style="width: 55px; height:30px; border-radius: 0; text-align:center; margin: 0 10px 0 10px">
-                                <span>дней</span>
+                        <div class="food-setting-container">
+                            <div class="food-setting">
+                                <div class="food-setting-item">
+                                    <div class="food-settig-icon single-24"></div>
+                                    <span>Суточная выдача</span>
+                                    <input class="food-input kg-input" type="number" step="0.1">
+                                    <span>кг</span>
+                                </div>
+                            </div>
+                            <div class="food-setting">
+                                <div class="food-setting-item">
+                                    <div class="food-settig-icon time-add "></div>
+                                    <span>Временная прибавка</span>
+                                    <input class="food-input kg-input" type="number" step="0.1">
+                                    <span>кг на</span>
+                                    <input class="food-input" type="number" step="0.1">
+                                    <span>дней</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -290,15 +225,13 @@
                             <div class="food-setting-item">
                                 <div class="food-settig-icon min-one-day"></div>
                                 <span style="width:240px;">Минимальная выдача, не более</span>
-                                <input class="food-input" type="number"
-                                    style="width: 55px; height:30px; border-radius: 0; text-align:center">
+                                <input class="food-input" type="number" step="0.1">
                                 <span>% от суточного рациона</span>
                             </div>
                             <div class="food-setting-item">
                                 <div class="food-settig-icon max-one-day"></div>
                                 <span style="width:240px;">Максимальная выдача корма</span>
-                                <input class="food-input" type="number"
-                                    style="width: 55px; height:30px; border-radius: 0; text-align:center">
+                                <input class="food-input" type="number" step="0.1">
                                 <span>% от суточного рациона</span>
                             </div>
                         </div>
@@ -306,8 +239,7 @@
                             <div class="food-setting-item">
                                 <div class="food-settig-icon time-to-eat"></div>
                                 <span>Скорость поедания</span>
-                                <input class="food-input" type="number"
-                                    style="width: 55px; height:30px; border-radius: 0; text-align:center">
+                                <input class="food-input" min="0" type="number" step="0.1">
                                 <span>гр/сек</span>
                             </div>
                         </div>
@@ -365,7 +297,7 @@
             $(this).closest(".animals-menu-item").toggleClass("active-animal-item")
         });
 
-        $(".field-button").click(function () {
+        $("#review-page").on("click", ".field-button", function () {
             console.log(22)
             if (false == $(this).closest(".animals-review-title").next().is(':visible')) {
                 $('.group-container').slideUp(350);
@@ -375,7 +307,7 @@
             $(this).closest(".field-button").toggleClass("button-active");
         });
 
-        $(".all-field-button").click(function () {
+        $("#review-page").on("click", ".all-field-button", function () {
             if ($(this).closest(".all-field-button").hasClass("button-active")) {
                 $('.group-container').slideUp(350);
                 $(this).closest(".all-field-button").removeClass("button-active");
@@ -397,6 +329,69 @@
             location.href = "http://127.0.0.1:5502/src/main.html"
         })
 
+        class Group {
+            constructor(title) {
+                this.title = title;
+            }
+        }
+
+        let cowGroups = [new Group("Дойные"), new Group("Нетели"), new Group("Быки"), new Group("Другие"),]
+        let groupList = $(`#review-page`);
+
+        function populateGroups(currentGroups, groupsView, index) {
+            groupsView.find(".animals-review-item").each(function () {
+                $(this).remove()
+            })
+            $.each(currentGroups, function (index, value) {
+                const card = `
+                
+                    <div class="animals-review-title">
+                        <div class="animals-review-main">
+                            <span>${value["title"]}</span>
+                            <div class="value" id="flockValue${index}"></div>
+                            <dic class="problem-value"></dic>
+                        </div>
+                        <button class="edit-group"></button>
+                        <button class="field-button"></button>
+                    </div>
+                    <div class="group-container">
+                        <ul class="cow-list" id="flock${index}">
+
+                        </ul>
+                    </div>
+                
+`
+                const element = document.createElement('div');
+                element.innerHTML = card;
+                groupsView.append(element);
+                element.classList.add("animals-review-item")
+                console.log("Создали Элемент")
+            })
+            groupsView.append(`<div class="animals-review-add animals-review-item">
+                    <div class="animals-review-title">
+                        <div class="animals-review-main-info">
+                            <button class="add-group-button"></button>
+                            <span style="font-weight: normal;" >Добавить группу</span>
+                        </div>
+                    </div>
+                </div>`)
+            console.log("Создали добавление")
+            // $(`#flockValue${index}`).text(`${currentHerd.length} животных`)
+            // $(`#flockValue${index}`).text(herdView.length)
+
+            // $("#flock0").closest(".animals-review-item").children(".animals-review-title").children(".animals-review-main").children(".value2").text()
+        }
+
+        $("#review-page").on("click", ".animals-review-add", function () {
+
+            let title = prompt("Название")
+            newGroup = new Group(title)
+
+            cowGroups.push(newGroup);
+            populateGroups(Object.values(cowGroups), groupList);
+            createCows()
+        })
+
         class Cow {
             constructor(id, type) {
                 this.id = id;
@@ -409,24 +404,26 @@
             "herd1": [new Cow("1", "НеСтельная"), new Cow("2", "НеСтельная",), new Cow("3", "НеСтельная",), new Cow("5", "НеСтельная",), new Cow("5", "НеСтельная",), new Cow("5", "НеСтельная",), new Cow("5", "НеСтельная",), new Cow("5", "НеСтельная",), new Cow("5", "НеСтельная",)],
             "herd2": [],
             "herd3": [],
+            "herd4": [],
         }
 
         function populateCows(currentHerd, herdView, index) {
-            herdView.find("li").each(function () {
+            herdView.find(".cow-list-item").each(function () {
                 $(this).remove()
             })
             $.each(currentHerd, function (index, value) {
-                const card = `<li class="cow-list-item" data-index=${index}>
+                const card = `
                                 <div class="count">${value["id"]}</div>
                                 <div class="cow-type">${value["type"]}</div>
-                            </li>`
+`
                 const element = document.createElement('li');
                 element.innerHTML = card;
-
                 herdView.append(element);
+                $(".cow-list").find("li").addClass("cow-list-item")
                 console.log(herdView.length)
+
             })
-            herdView.append(`<li class="add-cow-list-item">
+            herdView.append(`<li class="add-cow-list-item cow-list-item">
                                 <div class="add-animal">
                                 </div>
                             </li>`)
@@ -436,24 +433,52 @@
             // $("#flock0").closest(".animals-review-item").children(".animals-review-title").children(".animals-review-main").children(".value2").text()
         }
 
-        $(".cow-list").each(function (index) {
-            let cowList = $(`#flock${index}`);
-            console.log(cowList)
-            populateCows(Object.values(herd)[index], cowList, index);
-            let $current = $(this);
-
-            $current.on("click", ".add-animal", function () {
-                console.log(index)
+        function createCows() {
+            $(".cow-list").each(function (index) {
                 let cowList = $(`#flock${index}`);
-                let id = prompt("Номер")
-                let type = prompt("Тип")
-                newCow = new Cow(id, type)
-    
-                Object.values(herd)[index].push(newCow);
+                console.log(cowList)
                 populateCows(Object.values(herd)[index], cowList, index);
-            })
-        })
+                let $current = $(this);
 
+                $current.on("click", ".add-animal", function () {
+                    console.log(index)
+                    let cowList = $(`#flock${index}`);
+                    let id = prompt("Номер")
+                    let type = prompt("Тип")
+                    newCow = new Cow(id, type)
+
+                    Object.values(herd)[index].push(newCow);
+                    populateCows(Object.values(herd)[index], cowList, index);
+                })
+            })
+        }
+
+        populateGroups(Object.values(cowGroups), groupList);
+        createCows();
+
+        const inputNumber = $("input[type='number']");
+        inputNumber.wrap(`<div class="quantity-number"></div>`);
+
+        $('<button type="button" class="minus-button">-</button>').insertBefore("input[type='number']");
+        $('<button type="button" class="plus-button">+</button></div>').insertAfter("input[type='number']");
+        const minusButton = $(".minus-button");
+        const plusButton = $(".plus-button");
+
+        minusButton.each(function (index) {
+            $(this).on("click", function (evt) {
+                let inputNumber = $(evt.target).next("input[type='number']");
+                inputNumber[0].stepDown();
+                inputNumber.change();
+            })
+        });
+
+        plusButton.each(function (index) {
+            $(this).on("click", function (evt) {
+                let inputNumber = $(evt.target).prev("input[type='number']");
+                inputNumber[0].stepUp();
+                inputNumber.change();
+            })
+        });
     </script>
 </body>
 
