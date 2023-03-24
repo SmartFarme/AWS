@@ -45,11 +45,16 @@
 .page {
     display: flex;
     padding: 50px 0 0;
+    height: 100%;
+    overflow-wrap: inherit;
 }
 
 .animals-memu {
     width: 300px;
     background-color: #006aa9;
+    height: 100%;
+    position: fixed;
+
 }
 
 #animals-menu-list {
@@ -104,7 +109,7 @@
 }
 
 .cow-list-item .count {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .cow-list-item .cow-type {
@@ -134,15 +139,68 @@
     transition: all 0.5s ease-out;
 }
 
-.cow-list-item, .add-cow-list-item {
-    width: 80px;
-    height: 50px;
+.cow-list-item {
+    width: 72px;
+    height: 72px;
     background-color: #fff;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     padding-left: 5px;
+}
+
+.yeld-statistics {
+    height: 15px;
+    display: flex;
+    gap: 5px
+}
+
+.yeld-statistics span {
+    font-size: 10px;
+    text-align: center;
+}
+
+.cow-indicators {
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+
+.have-problem {
+    opacity: 1;
+}
+
+.no-problem {
+    opacity: 0;
+}
+
+.cow-card-icon {
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bull-icon {
+    background-image: url(../svg/bull-blue.svg);
+}
+
+.cow-exit-icon {
+    background-image: url(../svg/cow-exit.svg);
+}
+
+.yeld-icon {
+    background-image: url(../svg/yeld-blue.svg);
+}
+
+.health-icon {
+    background-image: url(../svg/health-blue.svg);
+}
+
+.grass-icon {
+    background-image: url(../svg/grass-blue.svg);
 }
 
 .add-cow-list-item {
@@ -185,8 +243,9 @@
 }
 
 .aminals-main-field {
-    width: calc(100% - 300px);
+    width: 100%;
     padding-top: 10px;
+    padding-left: 300px;
 }
 
 .animals-review, .animals-review-item, .animals-review-add {
@@ -230,10 +289,13 @@
 }
 
 .animals-review-item span {
-    font-size: 16px;
+    
     font-family: Cera-regular;
     font-weight: 700;
 }
+
+
+
 
 .animals-review-title, .animals-food-title{
     display: flex;
@@ -439,18 +501,18 @@ input::-webkit-inner-spin-button {
 .quantity-number button:active {
     background-color: #0B9DDD;
     border: none;
+    color: white;
 }
 
 .quantity-number button {
     background-color: #fff;
-    font-size: 22px; 
+    font-size: 25px; 
     width: 38px;
-    display: flex;
-    font-size: 24px;
-    align-items: center;
+    color: #006AA9;
   }
 
 .quantity-number {
     margin: 0 10px 0 25px;
     max-height: 33px;
+    display: flex;
 }
