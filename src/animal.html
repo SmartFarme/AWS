@@ -130,16 +130,19 @@
         </div>
         <div class="aminals-main-field" id="animals-main-field">
             <div class="animal-container animals-page-active" id="review-page">
-                <div class="animals-review">
-                    <div class="animals-review-title" id="review-title">
+                <div class="animals-review " id="review-title">
+                    <div class="animals-review-title">
                         <span>Обзор</span>
                         <button class="add-cow-button"></button>
                         <button class="all-field-button"></button>
                     </div>
+                    <div id="review-animal">
+
+                    </div>
                 </div>
             </div>
             <div class="animal-container" id="yeald-page">
-                <div class="animals-review">
+                <div class="animals-review ">
                     <div class="animals-review-title">
                         <span>Доение</span>
                     </div>
@@ -156,13 +159,17 @@
                             <div class="food-setting-item">
                                 <div class="food-settig-icon single-give"></div>
                                 <span style="width: 210px;">Разовая выдача, не более</span>
-                                <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                <div class="quantity-number">
+                                    <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                </div>
                                 <span>кг</span>
                             </div>
                             <div class="food-setting-item">
                                 <div class="food-settig-icon single-give-24"></div>
                                 <span style="width: 210px;">Суточная выдача, не более</span>
-                                <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                <div class="quantity-number">
+                                    <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                </div>
                                 <span>кг</span>
                             </div>
                         </div>
@@ -170,13 +177,17 @@
                             <div class="food-setting-item">
                                 <div class="food-settig-icon max-green"></div>
                                 <span style="width: 330px;">Увеличение суточного рациона, не более</span>
-                                <input class="food-input kg-input" min="0"  type="number" step="0.1">
+                                <div class="quantity-number">
+                                    <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                </div>
                                 <span>кг</span>
                             </div>
                             <div class="food-setting-item">
                                 <div class="food-settig-icon max-red"></div>
                                 <span style="width: 330px;">Уменьшение суточного рациона, не более</span>
-                                <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                <div class="quantity-number">
+                                    <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                </div>
                                 <span>кг</span>
                             </div>
                         </div>
@@ -198,7 +209,9 @@
                                 <div class="food-setting-item">
                                     <div class="food-settig-icon single-24"></div>
                                     <span>Суточная выдача</span>
-                                    <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                    <div class="quantity-number">
+                                        <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                    </div>
                                     <span>кг</span>
                                 </div>
                             </div>
@@ -206,9 +219,13 @@
                                 <div class="food-setting-item">
                                     <div class="food-settig-icon time-add "></div>
                                     <span>Временная прибавка</span>
-                                    <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                    <div class="quantity-number">
+                                        <input class="food-input kg-input" min="0" type="number" step="0.1">
+                                    </div>
                                     <span>кг на</span>
-                                    <input class="food-input" min="0" type="number" step="1">
+                                    <div class="quantity-number">
+                                        <input class="food-input" min="0" type="number" step="1">
+                                    </div>
                                     <span>дней</span>
                                 </div>
                             </div>
@@ -225,14 +242,18 @@
                             <div class="food-setting-item">
                                 <div class="food-settig-icon min-one-day"></div>
                                 <span style="width:240px;">Минимальная выдача, не более</span>
-                                <div class="quantity-number"></div>
-                                <input class="food-input" min="0" type="number" step="1">
+        
+                                <div class="quantity-number">
+                                    <input class="food-input" min="0" type="number" step="1">
+                                </div>
                                 <span>% от суточного рациона</span>
                             </div>
                             <div class="food-setting-item">
                                 <div class="food-settig-icon max-one-day"></div>
                                 <span style="width:240px;">Максимальная выдача корма</span>
-                                <input class="food-input" min="0" type="number" step="1">
+                                <div class="quantity-number">
+                                    <input class="food-input" min="0" type="number" step="1">
+                                </div>
                                 <span>% от суточного рациона</span>
                             </div>
                         </div>
@@ -240,7 +261,9 @@
                             <div class="food-setting-item">
                                 <div class="food-settig-icon time-to-eat"></div>
                                 <span>Скорость поедания</span>
-                                <input class="food-input" min="0" type="number" step="1">
+                                <div class="quantity-number">
+                                    <input class="food-input" min="0" type="number" step="1">
+                                </div>
                                 <span>гр/сек</span>
                             </div>
                         </div>
@@ -250,32 +273,103 @@
             <div class="animal-container" id="sort-page">
                 <div class="animals-review">
                     <div class="animals-review-title">
-                        <span>Сортировка</span>
+                        <span>Параметры сортировки</span>
                     </div>
                 </div>
-            </div>
-            <div class="animal-container" id="bull-page">
-                <div class="animals-review">
-                    <div class="animals-review-title">
-                        <span>Воспроизводство</span>
+                <div class="sort-page-item" id="sort-hunt">
+                    <div class="sort-page-item-config">
+                        <div class="sort-config-item">
+                            <span>Животные в охоте</span>
+                            <select>
+                                <option>Зона 1</option>
+                                <option>Зона 2</option>
+                                <option>Зона 3</option>
+                                <option>Зона 4</option>
+                            </select>
+                        </div>
+                        <div class="sort-config-item">
+                            <input type="checkbox" >
+                            <span>Через</span>
+                            <div class="quantity-number">
+                                <input class="food-input" min="0" type="number" step="1">
+                            </div>
+                            <span>часов после наступления охоты</span>
+                        </div>
+                        <div class="sort-config-item">
+                            <input type="checkbox" >
+                            <span>Исключить животных менее</span>
+                            <div class="quantity-number">
+                                <input class="food-input" min="0" type="number" step="1">
+                            </div>
+                            <span>дней в лактации</span>
+                        </div>
+                        <div class="sort-config-item">
+                            <input type="checkbox" >
+                            <span>Исключить животных проходящих лечение</span>
+                        </div>
+                        <div class="sort-config-item">
+                            <input type="checkbox" >
+                            <span>Исключить животных менее</span>
+                            <div class="quantity-number">
+                                <input class="food-input" min="0" type="number" step="1">
+                            </div>
+                            <span>осеменений</span>
+                        </div>
+                        <div class="sort-config-item">
+                            <input type="checkbox" >
+                            <span>В интервал времени</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="animal-container" id="health-page">
-                <div class="animals-review">
-                    <div class="animals-review-title">
-                        <span>Здоровье</span>
-                    </div>
-                </div>
-            </div>
-            <div class="animal-container" id="info-page">
-                <div class="animals-review">
-                    <div class="animals-review-title">
-                        <span>Уведомления</span>
+                    <div class="range_container" id="range_container">
+                        <div class="sliders_control">
+                            <input style="display:block" id="fromSlider" type="range" value="8" min="0" max="24"
+                                name="amountRange" />
+                            <input id="toSlider" type="range" value="12" min="0" max="24" />
+                        </div>
+                        <div style="position:relative;" class="form_control">
+                            <div class="form_control_container quantity-number"
+                                style="position:absolute; color:red; min-width:115px;">
+                                <div class="form_control_container__time"></div>
+
+                                <input disabled type="number" id="fromInput" value="8" min="0" max="24"
+                                    name="amountInput" />
+
+                            </div>
+                            <div class="form_control_container quantity-number"
+                                style="position:absolute; color:red; min-width:115px;">
+                                <div class="form_control_container__time"></div>
+
+                                <input disabled class="form_control_container__time__input" type="number" id="toInput"
+                                    value="12" min="0" max="24" />
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="animal-container" id="bull-page">
+            <div class="animals-review">
+                <div class="animals-review-title">
+                    <span>Воспроизводство</span>
+                </div>
+            </div>
+        </div>
+        <div class="animal-container" id="health-page">
+            <div class="animals-review">
+                <div class="animals-review-title">
+                    <span>Здоровье</span>
+                </div>
+            </div>
+        </div>
+        <div class="animal-container" id="info-page">
+            <div class="animals-review">
+                <div class="animals-review-title">
+                    <span>Уведомления</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     </div>
     <script src="js/main.js"></script>
@@ -489,7 +583,7 @@
         createCows();
 
         const inputNumber = $("input[type='number']");
-        inputNumber.wrap(`<div class="quantity-number"></div>`);
+
 
         $('<button type="button" class="minus-button">-</button>').insertBefore("input[type='number']");
         $('<button type="button" class="plus-button">+</button></div>').insertAfter("input[type='number']");
@@ -511,6 +605,155 @@
                 inputNumber.change();
             })
         });
+
+        $("#sort").click(function () {
+            const fromSlider = document.querySelector('#fromSlider');
+            const toSlider = document.querySelector('#toSlider');
+            const fromInput = document.querySelector('#fromInput');
+            const toInput = document.querySelector('#toInput');
+            fillSlider(fromSlider, toSlider, '#808080', '#0B9DDD', toSlider);
+            setToggleAccessible(toSlider);
+
+
+            let off = fromSlider.offsetWidth / (parseInt(fromSlider.max) - parseInt(fromSlider.min));
+
+            let px = ((fromSlider.valueAsNumber - parseInt(fromSlider.min)) * off) - (fromInput.offsetParent.offsetWidth / 2);
+
+            let toOff = toSlider.offsetWidth / (parseInt(toSlider.max) - parseInt(toSlider.min));
+            let toPx = ((toSlider.valueAsNumber - parseInt(toSlider.min)) * toOff) - (toInput.offsetParent.offsetWidth / 2);
+
+
+            toInput.parentElement.style.left = toPx + 'px';
+            console.log(toInput.offsetParent.offsetWidth)
+            toInput.parentElement.style.top = -72 + 'px';
+
+            console.log(toInput.top)
+            fromInput.parentElement.style.left = px + 'px';
+
+            console.log(fromInput.parentElement.style.left)
+
+            fromInput.parentElement.style.top = -72 + 'px';
+
+
+
+            function controlFromInput(fromSlider, fromInput, toInput, controlSlider) {
+                const [from, to] = getParsed(fromInput, toInput);
+                fillSlider(fromInput, toInput, '#808080', '#0B9DDD', controlSlider);
+                if (from > to) {
+                    fromSlider.value = to;
+                    fromInput.value = to;
+                } else {
+                    fromSlider.value = from;
+                }
+                let px = ((fromInput.valueAsNumber - parseInt(fromInput.min)) * off) - (fromInput.offsetParent.offsetWidth / 2);
+                fromInput.parentElement.style.left = px + 'px';
+
+                if ((toSlider.value - fromSlider.value) < 2) {
+                    fromInput.parentElement.style.top = 12 + "px"
+                } else {
+                    fromInput.parentElement.style.top = -72 + "px"
+                }
+                console.log("CatchTwo")
+            }
+
+            function controlToInput(toSlider, fromInput, toInput, controlSlider) {
+                const [from, to] = getParsed(fromInput, toInput);
+                fillSlider(fromInput, toInput, '#808080', '#0B9DDD', controlSlider);
+                setToggleAccessible(toInput);
+                if (from <= to) {
+                    toSlider.value = to;
+                    toInput.value = to;
+                } else {
+                    toInput.value = from;
+                }
+                let toPx = ((toInput.valueAsNumber - parseInt(toInput.min)) * toOff) - (toInput.offsetParent.offsetWidth / 2);
+                toInput.parentElement.style.left = toPx + 'px';
+
+                if ((toSlider.value - fromSlider.value) < 2) {
+                    fromInput.parentElement.style.top = 12 + "px"
+                } else {
+                    fromInput.parentElement.style.top = -72 + "px"
+                }
+            }
+
+            function controlFromSlider(fromSlider, toSlider, fromInput) {
+                const [from, to] = getParsed(fromSlider, toSlider);
+                fillSlider(fromSlider, toSlider, '#808080', '#0B9DDD', toSlider);
+                if (from > to) {
+                    fromSlider.value = to;
+                    fromInput.value = to;
+                } else {
+                    fromInput.value = from;
+                }
+                let px = ((fromSlider.valueAsNumber - parseInt(fromSlider.min)) * off) - (fromInput.offsetParent.offsetWidth / 2);
+                fromInput.parentElement.style.left = px + 'px';
+                if ((toSlider.value - fromSlider.value) < 2) {
+                    fromInput.parentElement.style.top = 12 + "px"
+                } else {
+                    fromInput.parentElement.style.top = -72 + "px"
+                }
+            }
+
+            function controlToSlider(fromSlider, toSlider, toInput) {
+                const [from, to] = getParsed(fromSlider, toSlider);
+                fillSlider(fromSlider, toSlider, '#808080', '#0B9DDD', toSlider);
+                setToggleAccessible(toSlider);
+                if (from <= to) {
+                    toSlider.value = to;
+                    toInput.value = to;
+                } else {
+                    toInput.value = from;
+                    toSlider.value = from;
+                }
+                let toPx = ((toSlider.valueAsNumber - parseInt(toSlider.min)) * toOff) - (toInput.offsetParent.offsetWidth / 2);
+                toInput.parentElement.style.left = toPx + 'px';
+                if ((toSlider.value - fromSlider.value) < 2) {
+                    fromInput.parentElement.style.top = 12 + "px"
+                } else {
+                    fromInput.parentElement.style.top = -72 + "px"
+                }
+            }
+
+            function getParsed(currentFrom, currentTo) {
+                const from = parseInt(currentFrom.value, 10);
+                const to = parseInt(currentTo.value, 10);
+                return [from, to];
+            }
+
+            function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
+                const rangeDistance = to.max - to.min;
+                const fromPosition = from.value - to.min;
+                const toPosition = to.value - to.min;
+                controlSlider.style.background = `linear-gradient(
+      to right,
+      ${sliderColor} 0%,
+      ${sliderColor} ${(fromPosition) / (rangeDistance) * 100}%,
+      ${rangeColor} ${((fromPosition) / (rangeDistance)) * 100}%,
+      ${rangeColor} ${(toPosition) / (rangeDistance) * 100}%, 
+      ${sliderColor} ${(toPosition) / (rangeDistance) * 100}%, 
+      ${sliderColor} 100%)`;
+            }
+
+            function setToggleAccessible(currentTarget) {
+                const toSlider = document.querySelector('#toSlider');
+                if (Number(currentTarget.value) <= 0) {
+                    toSlider.style.zIndex = 2;
+                } else {
+                    toSlider.style.zIndex = 0;
+                }
+            }
+
+
+            fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
+            toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
+            fromInput.onchange = () => controlFromInput(fromSlider, fromInput, toInput, toSlider);
+            toInput.onchange = () => controlToInput(toSlider, fromInput, toInput, toSlider);
+            // Handler for .load() called.
+        });
+
+
+
+
     </script>
 </body>
 
