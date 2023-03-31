@@ -1,13 +1,13 @@
 /* eslint-disable linebreak-style */
-const loginCheck = sessionStorage.getItem('current');
+// const loginCheck = sessionStorage.getItem('current');
 
-document.addEventListener('DOMContentLoaded', function() {
-  if (loginCheck == null) {
-    location.href = 'http://127.0.0.1:5502/src/index.html';
-  } else {
-    console.log('Авторизован');
-  }
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//   if (loginCheck == null) {
+//     location.href = 'http://127.0.0.1:5502/src/index.html';
+//   } else {
+//     console.log('Авторизован');
+//   }
+// });
 
 
 const $burger = $('#burger-menu');

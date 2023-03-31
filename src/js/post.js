@@ -1,3 +1,5 @@
+
+//Вывод списка последних авторизованных пользователей, с указанием времени если вход был сегодня, и даты и времени если ранее
 document.addEventListener("DOMContentLoaded", function () {
     instance.get("auth/login/list").then((response) => {
         let lastLogin = response.data.slice(-5).reverse()
@@ -45,24 +47,13 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 
-
-
-
 function debounce(callee, timeoutMs) {
-
     return function perform(...args) {
-
         let previousCall = this.lastCall
-
-
         this.lastCall = Date.now()
-
-
         if (previousCall && this.lastCall - previousCall <= timeoutMs) {
             clearTimeout(this.lastCallTimer)
         }
-
-
         this.lastCallTimer = setTimeout(() => callee(...args), timeoutMs)
 
 
@@ -76,7 +67,7 @@ const button = document.querySelector(".test-button");
 
 
 
-
+//Авторизация и вывод подсказки в случае неудачной авторизации
 const instance = axios.create({
     baseURL: 'https://localhost:5050/api',
 });
